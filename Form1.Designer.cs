@@ -51,10 +51,10 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,6 +193,7 @@
             this.btn_clear.TabIndex = 8;
             this.btn_clear.Text = "초기화";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_save
             // 
@@ -212,6 +213,7 @@
             this.btn_update.TabIndex = 10;
             this.btn_update.Text = "수정";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_delete
             // 
@@ -221,6 +223,7 @@
             this.btn_delete.TabIndex = 11;
             this.btn_delete.Text = "삭제";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // listView1
             // 
@@ -240,6 +243,8 @@
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.Click += new System.EventHandler(this.listView1_Click);
             // 
             // columnHeader1
             // 
@@ -260,6 +265,11 @@
             this.columnHeader4.Text = "데뷔";
             this.columnHeader4.Width = 100;
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "수상";
+            this.columnHeader7.Width = 100;
+            // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "사이트";
@@ -273,11 +283,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "수상";
-            this.columnHeader7.Width = 100;
             // 
             // Form1
             // 
